@@ -17,7 +17,7 @@ inferior_50 = 0
 entre_50_e_80 = 0
 acima_de_80 = 0
 
-media = ((preços [0]) + (preços [1]) + (preços [2]) + (preços[3]) + (preços[4])) / 5
+media = ((precos [0]) + (precos [1]) + (precos [2]) + (precos[3]) + (precos[4])) / 5
 
 for preco in precos:
 	if preco < 50:
