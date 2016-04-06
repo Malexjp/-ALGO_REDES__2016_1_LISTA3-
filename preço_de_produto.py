@@ -17,6 +17,8 @@ inferior_50 = 0
 entre_50_e_80 = 0
 acima_de_80 = 0
 
+media = ((preços [0]) + (preços [1]) + (preços [2]) + (preços[3]) + (preços[4])) / 5
+
 for preco in precos:
 	if preco < 50:
 		inferior_50 = inferior_50 + 1
@@ -28,3 +30,4 @@ for preco in precos:
 print("Quantidade de produtos inferior a R$ 50,00 é: %d" % inferior_50)
 print("Quantidade de produtos entre 50,00 e R$ 80,00 é: %d" % entre_50_e_80)
 print("Quantidade de produtos acima de R$ 80,00 é: %d" % acima_de_80)
+print("A média dos preços dos produtos é: R$ %.2f" %float(media))
