@@ -7,7 +7,7 @@
 # Programa pesquisa de opinião
 
 print("Qualifique o filme assistido seguindo os critérios: 1 - Regular; 2 - Bom; 3 - Ótimo")
-opinioes = list()
+	opinioes = list()
 
 for o in range (0, 3):
 opinioes.append(int(input("Opinião do espectador %d: " % (o + 1))))
@@ -18,12 +18,12 @@ regular = 0
 bom = 0
 otimo = 0
 
-for opinião in opiniões:
-	if opinião == 1:
+for opiniao in opinioes:
+	if opiniao == 1:
 		regular = regular + 1
-	if opinião == 2:
+	if opiniao == 2:
 		bom = bom + 1
-	if opinião == 3:
+	if opiniao == 3:
 		otimo = otimo + 1
 
 print("Quantidade de espectadores que opinaram regular: %d" % regular)
