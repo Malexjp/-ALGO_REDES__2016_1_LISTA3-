@@ -7,7 +7,12 @@
 # Programa pesquisa de opinião
 
 print("Qualifique o filme assistido seguindo os critérios: 1 - Regular; 2 - Bom; 3 - Ótimo")
-opiniões = [int(input("Opinião do espectador 1:")), int(input("Opinião do espectador 2:")), int(input("Opinião do espectador 3:")), int(input("Opinião do espectador 4:")), int(input("Opinião do espectador 5:"))]
+opinioes = list()
+
+for o in range (0, 3):
+opinioes.append(int(input("Opinião do espectador %d: " % (o + 1))))
+
+# opiniões = [int(input("Opinião do espectador 1:")), int(input("Opinião do espectador 2:")), int(input("Opinião do espectador 3:")), int(input("Opinião do espectador 4:")), int(input("Opinião do espectador 5:"))]
 
 regular = 0
 bom = 0
